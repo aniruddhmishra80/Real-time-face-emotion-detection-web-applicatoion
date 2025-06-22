@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Real-Time Emotion Detection</h1>
+    </header>
+    <div class="video-container">
+        <h2>Live Video Feed</h2>
+        <img src="{{ url_for('video_feed') }}" alt="Live video feed">
+    </div>
+    <footer>
+        <p>Emotion Detection System | Powered by Flask and OpenCV</p>
+    </footer>
+</body>
+</html>
